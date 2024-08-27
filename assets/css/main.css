@@ -11,7 +11,9 @@
     font-style: normal;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Arian_AMU', sans-serif;
     background-color: #0B1D26;
@@ -54,22 +56,228 @@ nav ul li{
     margin-right: 50px;
 }
 .wrapper{
-    height: 100vh;
+    height: 100%;
     background: url('../img/Exclude.png') no-repeat;
 }
 .navigation_numbers{
+    position: fixed;
+    right: 5%; /* Отступ справа */
+    top: 50%; /* Расположить по центру по оси Y */
+    transform: translateY(-50%);
     width: 77px;
     height: 240px;
     border-right: 3px solid #858E92;
 }
-.navigation_numbers .active{
+.navigation_numbers_wrap{
+    margin: 16px 0 20px 0;
+}
+.navigation_numbers .active_side span{
+    position: absolute;
+    height: 60px;
     border-right: 3px solid #ffffff;
+    margin-left: 20px;
 }
 .navigation_numbers a{
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
     text-align: right;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.presentation {
+    padding-top: 88px;
+    align-items: center;
+    gap: 20%;
 }
 .social_links{
+    height: 25px;
     rotate: 90deg;
+}
+.social_links p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+.social_links a{
+    rotate: -90deg;
+    margin-right: 24px;
+}
+.central_info_title{
+    align-items: center;
+    justify-content: flex-start;
+    height: 21px;
+}
+.central_info_title p{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-left: 30px;
+    color: #FBD784;
+    margin-bottom: 0;
+}
+.central_info_desc p{
+    font-size: 88px;
+    line-height: 100px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.central_info_btn a{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.central_info_btn img{
+    margin-left: 18px;
+}
+
+
+
+
+
+
+
+
+
+.sections{
+    margin-top: 47%;
+}
+.text_block{
+    width: 45%;
+}
+.img_block{
+    width: 30%;
+    background-position-x: center !important;
+    background-size: contain !important;
+}
+
+#first{
+    justify-content: center;
+    height: 700px;
+    margin-bottom: 200px;
+    align-items: center;
+}
+#second{
+    justify-content: center;
+    height: 700px;
+    margin-bottom: 200px;
+    align-items: center;
+}
+#third{
+    justify-content: center;
+    margin-bottom: 127px;
+    height: 700px;
+    align-items: center;
+}
+
+#first .text_block{
+    background: url('../img/01.png') no-repeat;
+    margin: 60px 3% 60px 0;
+}
+#second .text_block{
+    background: url('../img/02.png') no-repeat;
+    margin: 60px 3% 60px 0;
+}
+#third .text_block{
+    background: url('../img/03.png') no-repeat;
+    margin: 60px 3% 60px 0;
+}
+
+#first .img_block{
+    background: url('../img/01_1.png') no-repeat;
+    height: 100%;
+}
+#second .img_block{
+    background: url('../img/02_1.png') no-repeat;
+    height: 100%;
+}
+#third .img_block{
+    background: url('../img/03_1.png') no-repeat;
+    height: 100%;
+}
+
+.text_block_title {
+    align-items: center;
+    justify-content: flex-start;
+    height: 21px;
+    margin-left: 17%;
+}
+.text_block_desc{
+    margin-left: 17%;
+}
+.text_block_desc_small{
+    margin-left: 17%;
+}
+.text_block_title p{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 30px;
+    color: #FBD784;
+    letter-spacing: 6px;
+    margin-bottom: 0;
+}
+.text_block_desc p{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.text_block_desc_small p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+#third .text_block_desc_small p{
+    width: 75%;
+}
+
+
+
+
+
+
+.footer{
+    padding: 110px 4% 0 4%;
+}
+.footer_address_block{
+    margin-bottom: 110px;
+}
+.footer_info {
+    width: 40%;
+}
+.footer_info div{
+    height: 31px;
+}
+.footer_info p{
+    width: 105px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    color: #FBD784;
+    text-align: left;
+}
+.footer_info a{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-left: 4%;
+}
+.footer_comertion_info p{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #C5C5C5;
+}
+.footer_comertion_info a{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #C5C5C5;
+}
