@@ -8,45 +8,16 @@ $(document).ready(function(){
             
             if (scrollPosition >= sectionOffset - 100 && scrollPosition < sectionOffset + sectionHeight - 100) {
                 $('nav a').removeClass('active');
+                $('.navigation_numbers_wrap a').removeClass('active_side');
                 $('nav a[href="#' + sectionId + '"]').addClass('active');
+                $('.navigation_numbers_wrap a[href="#' + sectionId + '"]').addClass('active_side');
             }
         });
     }
-    
-
-    $('nav a').on('click', function(e) {
-        e.preventDefault();
-
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 1000); // Время прокрутки в миллисекундах
-
-        setActiveNav();
-    });
-
-    $('.navigation_numbers_wrap a').on('click', function(e) {
-        // Отменяем стандартное поведение ссылки
-        e.preventDefault();
-
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 1000); // Время прокрутки в миллисекундах
-
-        setActiveNav();
-    });
     $(window).on('scroll', function() {
         setActiveNav();
-        
-        // Показываем или скрываем кнопку "Вверх"
-        if ($(window).scrollTop() > 300) {
-            $('#goTopBtn').addClass('active_side');
-        } else {
-            $('#goTopBtn').removeClass('active_side');
-        }
     });
-
+   
     $('#goTopBtn').on('click', function(e) {
         e.preventDefault();
         $('html, body').animate({

@@ -9,62 +9,78 @@
     <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-<header class="d-flex justify-content-around">
+<header  class="d-flex justify-content-around">
     <div class="logo d-flex "></div>
     <div class="navigation d-flex">
         <nav>
             <ul class="d-flex">
-                <li><a href="#first">Գլխավոր</a></li>
-                <li><a href="#second">Մեր Մասին</a></li>
-                <li><a href="#third">Նախագծեր</a></li>
+                <li><a href="#first" data-translate-key="header_1">Գլխավոր</a></li>
+                <li><a href="#second" data-translate-key="header_2">Մեր Մասին</a></li>
+                <li><a href="#third" data-translate-key="header_3">Նախագծեր</a></li>
             </ul>
         </nav>
     </div>
     <div class="lang">
-        <a href="#">ENG <img src="./assets/img/Vector.png" alt="Vector"></a>
+        <button class="dropdown_btn" data-bs-toggle="dropdown" aria-expanded="false">
+            <p class="my_selected_lang">ՀԱՅ</p>
+            <img src="./assets/img/Vector.png" alt="Vector">
+        </button>
+        <ul class="dropdown-menu my_dropdown_style">
+          <li><a class="lang-btn active_lang" data-lang="am" href="#">ՀԱՅ</a></li>
+          <li><a class="lang-btn" data-lang="en" href="#">ENG</a></li>
+          <li><a class="lang-btn" data-lang="ru" href="#">РУС</a></li>
+        </ul>
     </div>
 </header>
 <div class="wrapper position-relative">
     <div class="navigation_numbers ">
            <div class="navigation_numbers_wrap d-flex flex-column">
-                <a class="active_side" id="goTopBtn" href="#goTopBtn">Սկիզբ<span></span></a>
-                <a href="#first">01<span></span></a>
-                <a href="#second">02<span></span></a>
-                <a href="#third">03<span></span></a>
+                <a class="active_side" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()" href="#start" data-translate-key="start">
+                    Սկիզբ
+                </a>
+                <a href="#first">
+                    01
+                </a>
+                <a href="#second">
+                    02
+                </a>
+                <a href="#third">
+                    03
+                </a>
            </div>
     </div>
 
 
 
-    <div class="presentation d-flex">
+    <section id="start" class="presentation d-flex">
         <div class="social_links d-flex">
-            <p>Follow us</p>
+            <p data-translate-key="follow">Follow us</p>
             <a href="javascript:void(0);"><img src="./assets/img/instagram.png" alt="instagram"></a>
             <a href="javascript:void(0);"><img src="./assets/img/twitter.png" alt="twitter"></a>
         </div>
         <div class="central_info d-flex flex-column w-50">
-            <div class="central_info_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p>Building Futures</p></div>
-            <div class="central_info_desc"><p>Building Your Dreams, One Brick at a Time.</p></div>
-            <div class="central_info_btn"><a href="javascript:void(0);">scroll down <img src="./assets/img/arrow_down.png" alt="arrow_down"></a></div>
+            <div class="central_info_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p data-translate-key="content_title">Building Futures</p></div>
+            <div class="central_info_desc"><p data-translate-key="content_desc">Building Your Dreams, One Brick at a Time.</p></div>
+            <div class="central_info_btn"><a href="#first" data-translate-key="scroll_down">scroll down </a><img src="./assets/img/arrow_down.png" alt="arrow_down"></div>
         </div>
-    </div>
+    </section>
 
 
 
     <div class="sections">
         <section id="first" class="d-flex flex-row">
             <div class="text_block d-flex flex-column">
-                <div class="text_block_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p>Get Started</p></div>
-                <div class="text_block_desc"><p>What do you want to know about us?</p></div>
-                <div class="text_block_desc_small"><p>«Օկտագոն» սպառողական կոոպերերատիվ շինարարական ընկերությունը հիմնադրվել է 2016 թվականին։  ՀՀ տարածքում քաղաքաշինական գործունեություն ծավալելու նպատակով համապատասխան լիազոր մարմնի կողմից 2020 թվականի փետրվարի 27-ին ընկերությանը տրամադրվել է շինարարության իրականացման N17444 լիցենզիա և լիցենզիային կից բնակելի, հասարակական և արտադրական N 17444-01 ներդիր։ Իր  քաղաքաշինական գործունեությունը սկսել է 2021 թվականից։  «Օկտագոն» սպառողական կոոպերերատիվի քաղաքաշինական ամենախոշոր նախագծերից է Երևան քաղաքի Թումանյան փողոցի  2-րդ անցուղու բազմաբնակարան համալիրը:</p></div>
+                <div class="text_block_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p data-translate-key="section_1_title">Get Started</p></div>
+                <div class="text_block_desc"><p data-translate-key="section_1_desc">What do you want to know about us?</p></div>
+                <div class="text_block_desc_small"><p data-translate-key="section_1_desc_small">«Օկտագոն» սպառողական կոոպերերատիվ շինարարական ընկերությունը հիմնադրվել է 2016 թվականին։  ՀՀ տարածքում քաղաքաշինական գործունեություն ծավալելու նպատակով համապատասխան լիազոր մարմնի կողմից 2020 թվականի փետրվարի 27-ին ընկերությանը տրամադրվել է շինարարության իրականացման N17444 լիցենզիա և լիցենզիային կից բնակելի, հասարակական և արտադրական N 17444-01 ներդիր։ Իր  քաղաքաշինական գործունեությունը սկսել է 2021 թվականից։  «Օկտագոն» սպառողական կոոպերերատիվի քաղաքաշինական ամենախոշոր նախագծերից է Երևան քաղաքի Թումանյան փողոցի  2-րդ անցուղու բազմաբնակարան համալիրը:</p></div>
             </div>
             <div class="img_block"></div>
         </section>
         <section id="second" class="d-flex flex-row-reverse">
             <div class="text_block d-flex flex-column">
-                <div class="text_block_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p>Safety First</p></div>
-                <div class="text_block_desc"><p>Why to choose Us?</p></div>
-                <div class="text_block_desc_small"><p>Ճարտարապետական և սեյսմակայուն շինարարության նորովի լուծումներով նախագծերի ապահովումը հանդիսանում է ընկերության հիմնարար նպատակներից։
+                <div class="text_block_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p data-translate-key="section_2_title">Safety First</p></div>
+                <div class="text_block_desc"><p data-translate-key="section_2_desc">Why to choose Us?</p></div>
+                <div class="text_block_desc_small"><p data-translate-key="section_2_desc_small">Ճարտարապետական և սեյսմակայուն շինարարության նորովի լուծումներով նախագծերի ապահովումը հանդիսանում է ընկերության հիմնարար նպատակներից։
                     Մենք կարևորում են այն արժեքները, որոնց վրա մեր քաղաքաշինական գործունությունը հիմնված է հիմնադրման օրվանից և վստահեցնում ենք, որ մեր գործունեությամբ ապահովելու ենք հարմարավետ, անվտանգ և միաժամանակ սեյսմակայուն կառույցներ,  որոնք կհամապատասխանեն քաղաքաշինական նորմերին և ներկա կենսակերպի պահանջներին, որոնց պարբերաբար կարող եք ծանոթանալ մեր կայքում։ 
                     Այստեղ կարող եք ծանոթանալ մեր կողմից իրականացվող շինաշխատանքերի ընթացքին, առկա նախագծերին և կատարել ճիշտ ընտրություն։</p></div>
             </div>
@@ -72,9 +88,9 @@
         </section>
         <section id="third" class="d-flex flex-row">
             <div class="text_block d-flex flex-column">
-                <div class="text_block_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p>What  We Do</p></div>
-                <div class="text_block_desc"><p>Projects</p></div>
-                <div class="text_block_desc_small"><p>Այստեղ կարող եք ծանոթանալ մեր կողմից իրականացվող շինաշխատանքերի ընթացքին, առկա նախագծերին և կատարել ճիշտ ընտրություն։</p></div>
+                <div class="text_block_title d-flex"><img src="./assets/img/underline.png" alt="underline"><p data-translate-key="section_3_title">What  We Do</p></div>
+                <div class="text_block_desc"><p data-translate-key="section_3_desc">Projects</p></div>
+                <div class="text_block_desc_small"><p data-translate-key="section_3_desc_small">Այստեղ կարող եք ծանոթանալ մեր կողմից իրականացվող շինաշխատանքերի ընթացքին, առկա նախագծերին և կատարել ճիշտ ընտրություն։</p></div>
             </div>
             <div class="img_block"></div>
         </section>
@@ -85,9 +101,9 @@
 <footer class="footer">
     <div class="footer_address_block d-flex flex-row justify-content-between">
         <div class="footer_info d-flex flex-column">
-            <div class="d-flex flex-row"><p>Address:</p> <a href="javascript:void(0);">ք․ Երևան, Աղբյուր Սերոբի փ․, 11/3</a></div>
-            <div class="d-flex flex-row"><p>Phone:</p> <a href="javascript:void(0);">+374 41 20 09 88 ,  +374 41 10 20 06</a></div>
-            <div class="d-flex flex-row"><p>E-Mail:</p> <a href="javascript:void(0);">oktagon_cc@mail.ru</a></div>
+            <div class="d-flex flex-row"><p data-translate-key="address">Address:</p> <a href="http://www.google.com/maps/place/40.19861040409608,44.50592265458797" target="_blank" data-translate-key="address_text">ք․ Երևան, Աղբյուր Սերոբի փ․, 11/3</a></div>
+            <div class="d-flex flex-row"><p data-translate-key="phone">Phone:</p> <a href="tel:+37441200988">+374 41 20 09 88 ,  +374 41 10 20 06</a></div>
+            <div class="d-flex flex-row"><p data-translate-key="mail">E-Mail:</p> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=oktagon_cc@mail.ru" target="_blank">oktagon_cc@mail.ru</a></div>
         </div>
         <div class="footer_logo d-flex align-items-end">
             <img src="./assets/img/footer_logo.png" alt="footer_logo">
@@ -102,5 +118,11 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/translation.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            history.replaceState(null, null, ' '); // Removes the hash from the URL
+        });
+    </script>
 </body>
 </html>
